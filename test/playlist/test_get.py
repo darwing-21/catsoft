@@ -24,3 +24,73 @@ def test_get_categories(get_token):
     }
     response = requests.request("GET", url, headers=headers, data=payload)
     assert_status_code_200(response)
+
+
+def test_get_playlist(get_token):
+    url = f"{BASE_URI}/v1/playlists/2trIWXYIZ6NZt7Ydp1NKSN"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+        'Authorization': 'Bearer ' + token
+    } 
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
+
+
+def test_get_categories(get_token):
+    url = f"{BASE_URI}/v1/browse/categories"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+    'Authorization': 'Bearer ' + token
+    }
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
+    
+def test_get_playlist(get_token):
+    url = f"{BASE_URI}/v1/playlists/2trIWXYIZ6NZt7Ydp1NKSN"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+        'Authorization': 'Bearer ' + token
+    } 
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
+
+
+def test_get_categories(get_token):
+    url = f"{BASE_URI}/v1/browse/categories"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+    'Authorization': 'Bearer ' + token
+    }
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
+
+def test_get_playlist(get_token):
+    url = f"{BASE_URI}/v1/playlists/2trIWXYIZ6NZt7Ydp1NKSN"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+        'Authorization': 'Bearer ' + token
+    } 
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
+
+
+def test_get_categories(get_token):
+    url = f"{BASE_URI}/v1/browse/categories"
+    token = get_token
+    print(token)
+    payload = {}
+    headers = {
+    'Authorization': 'Bearer ' + token
+    }
+    response = requests.request("GET", url, headers=headers, data=payload)
+    assert_status_code_200(response)
