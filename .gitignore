@@ -1,0 +1,10 @@
+.venv
+venv
+.env
+env
+catsoft_env
+**/__pycache__/
+.idea/misc.xml
+.idea/workspace.xml
+**/.pytest_cache/
+.idea
